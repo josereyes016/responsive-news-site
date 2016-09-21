@@ -466,12 +466,12 @@ a, button {
     transition: height 0.3s linear;
   }
 
-  .nav__list:last-child {
-    border-bottom: none;
-  }
-
   .slide-down {
     height: 288px;
+  }
+
+  .nav__list .nav__item:last-child {
+    border-bottom: none;
   }
 
 
