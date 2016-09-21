@@ -54,9 +54,10 @@ ul {
 }
 
 .header__inner {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 .header__logo {
@@ -397,6 +398,7 @@ a, button {
   }
 }
 
+/* Mobile */
 @media only screen and (max-width: 480px) {
 
   main {
@@ -489,6 +491,13 @@ a, button {
   .open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
+  }
+}
+
+
+@media only screen and (max-width:647px) and (min-width:481px) {
+  .header__title {
+    font-size: 3.5em;
   }
 }
 
