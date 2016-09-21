@@ -405,7 +405,7 @@ a, button {
 @media only screen and (max-width: 480px) {
 
   main {
-    margin-top: 63px;
+    margin-top: 74px;
   }
   .hamburger {
     cursor: pointer;
