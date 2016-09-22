@@ -389,7 +389,36 @@ a, button {
   min-height: 48px;
 }
 
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
 
+.block-ellipsis {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 33px;
+  margin: 0 auto;
+  /* Font size will be 16px min */
+  font-size: 16px;
+  line-height: 1;
+  /* We want to show 2 lines as a test */
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Doing the math  16 * 2 + 1 = 33px height */
+}
+
+/* The height property is equal to the number of lines desired
+** multiplied by the font-size plus 1px to account for character
+** descenders.font-size is set to 14px, and I wanted to show 3
+** lines of text before adding the ellipsis. So 3 x 14 + 1 = 43,
+** which means the total height will be 43px
+*/
 @media screen and (min-width:800px)
 {
   .container {
